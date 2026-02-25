@@ -53,7 +53,7 @@ export default function Hero() {
             icon="☕"
             title="Back-end"
             subtitle="Java & Spring"
-            positionClasses="top-20 -left-2 md:-left-8"
+            positionClasses="top-2 -left-2 md:-left-8"
             animationClass="animate-[bounce_3s_ease-in-out_infinite]"
           />
 
@@ -61,7 +61,7 @@ export default function Hero() {
             icon="⚖️"
             title="Startup"
             subtitle="JusDigital"
-            positionClasses="-bottom-20 -right-2 md:-right-6"
+            positionClasses="-bottom-15 -right-2 md:-right-6"
             animationClass="animate-[bounce_4s_ease-in-out_infinite]"
             iconBgClass="bg-slate-900 text-white"
           />
