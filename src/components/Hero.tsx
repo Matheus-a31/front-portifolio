@@ -53,7 +53,7 @@ export default function Hero() {
             icon="☕"
             title="Back-end"
             subtitle="Java & Spring"
-            positionClasses="top-2 -left-2 md:-left-8"
+            positionClasses="-top-6 -left-2 md:-left-8"
             animationClass="animate-[bounce_3s_ease-in-out_infinite]"
           />
 
