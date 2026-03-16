@@ -18,3 +18,20 @@ export async function getProjectById(id: string): Promise<Project> {
   
   return res.json();
 }
+
+export async function createProject(projectData: Omit<Project, 'id'>, authToken: string): Promise<Project> {
+  const res = await fetch(API_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Basic ${authToken}`
+    },
+    body: JSON.stringify(projectData),
+  });
+
+  if (!res.ok) {
+    throw new Error('Falha ao criar o projeto. Verifique suas credenciais.');
+  }
+
+  return res.json();
+}
