@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="flex flex-col items-start">
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6">
-            Construindo soluções com <span className="text-blue-600">engenharia de verdade.</span>
+            Resolvendo problemas com <span className="text-blue-600">soluções elegantes e performáticas.</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-6">
             Sou graduando em Engenharia de Software, profissional proativo, versátil e movido por desafios. 
