@@ -17,8 +17,8 @@ export default function Hero() {
             além de trabalhar como freelancer no desenvolvimento de soluções tecnológicas sob demanda.
           </p>
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-8">
-            Atualmente, integro a startup JusDigital, uma startup de Inteligência Artificial focada em transformar o dia 
-            a dia dos escritórios de advocacia, automatizando tarefas repetitivas e fazendo o advogado advogar com excelência.
+            Atualmente, integro a startup JusDigital como back-end, uma startup de Inteligência Artificial focada em transformar o dia 
+            a dia dos escritórios de advocacia, automatizando tarefas repetitivas e fazendo o advogado advogar com excelência. Além disso, integro o projeto NERDS também como back-end, na construção do sistema para ações de extensão da UFC, chamado GEX.
           </p>
           
           <div className="flex flex-wrap gap-3 mb-10">
