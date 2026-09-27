@@ -1,26 +1,141 @@
 @import "tailwindcss";
 
+/* ─── Design Tokens ─── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --c-white:     #FFFFFF;
+  --c-blue:      #2563EB;
+  --c-blue-dk:   #1D4ED8;
+  --c-blue-lt:   #EFF6FF;
+  --c-blue-ring: #93C5FD;
+  --c-ink:       #1E293B;
+  --c-muted:     #64748B;
+  --c-border:    #E2E8F0;
+  --c-surface:   #F8FAFC;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-background: var(--c-white);
+  --color-foreground: var(--c-ink);
+  --font-sans: var(--font-inter);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--c-white);
+  color: var(--c-ink);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
+/* ─── Animated Underline (reutilizável) ─── */
+.animated-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--c-blue);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms ease;
+}
+
+.animated-underline:hover::after,
+.animated-underline:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* ─── Button Fill Animation ─── */
+.btn-fill {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn-fill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--c-blue-dk);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease;
+  z-index: -1;
+}
+
+.btn-fill:hover::after,
+.btn-fill:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* ─── Skill Tag Hover ─── */
+.skill-tag {
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.skill-tag:hover {
+  background-color: var(--c-blue-lt);
+  border-color: var(--c-blue);
+}
+
+/* ─── Project Card Hover ─── */
+.project-card {
+  transition: transform 300ms ease, box-shadow 300ms ease, border-color 300ms ease;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.12);
+  border-color: var(--c-blue-ring);
+}
+
+/* ─── Hero Photo Hover ─── */
+#hero-photo {
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+#hero-photo:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 0 4px var(--c-blue);
+}
+
+/* ─── Hero Badge Hover ─── */
+.hero-badge {
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.hero-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.10);
+}
+
+/* ─── Back Link Arrow Animation ─── */
+.back-link {
+  transition: color 200ms ease;
+}
+
+.back-link:hover {
+  color: var(--c-blue-dk);
+}
+
+.back-link .back-arrow {
+  display: inline-block;
+  transition: transform 200ms ease;
+}
+
+.back-link:hover .back-arrow {
+  transform: translateX(-4px);
+}
+
+/* ─── Focus Visible Global ─── */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--c-blue);
+  outline-offset: 4px;
+  border-radius: 4px;
 }
