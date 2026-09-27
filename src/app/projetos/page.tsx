@@ -7,7 +7,7 @@ export default async function Projetos() {
   const projects = await getProjects();
 
   return (
-    <main className="min-h-screen flex flex-col bg-slate-50 text-slate-900">
+    <main className="min-h-screen flex flex-col bg-white text-slate-800">
       <Navbar />
       <div className="flex-grow pt-10">
         <ProjectsSection projects={projects} />
