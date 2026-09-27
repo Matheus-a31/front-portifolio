@@ -17,7 +17,7 @@ export default function Hero() {
             {/* Coluna esquerda — label "creative" + texto */}
             <div className="flex flex-col items-center lg:items-end justify-end lg:pr-10 lg:pb-16 order-2 lg:order-1 text-center lg:text-right">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-800 mb-3" style={{ letterSpacing: "-0.03em" }}>
-                engenheiro
+                Engineer
               </h2>
               <p className="text-slate-500 text-sm md:text-base max-w-xs" style={{ lineHeight: 1.7 }}>
                 Engenheiro de Software focado em construir soluções robustas e escaláveis com código limpo.
@@ -35,7 +35,7 @@ export default function Hero() {
                 &lt;coder&gt;
               </h2>
               <p className="text-slate-500 text-sm md:text-base max-w-xs" style={{ lineHeight: 1.7 }}>
-                Desenvolvedor fullstack que transforma ideias em aplicações reais com java, Spring Boot, Typescript, Nest.js.
+                Desenvolvedor back-end que transforma ideias em aplicações reais com java, Spring Boot, Typescript, Nest.js.
               </p>
             </div>
           </div>
@@ -44,8 +44,8 @@ export default function Hero() {
         {/* ── Seção abaixo da foto ── */}
         <div className="mt-12 md:mt-16 max-w-3xl mx-auto text-center">
           <h1 className="text-[clamp(2rem,4vw,3rem)] font-extrabold tracking-tight text-slate-800 leading-[1.15] mb-6" style={{ letterSpacing: "-0.02em" }}>
-            Construindo soluções com{" "}
-            <span className="text-blue-600">engenharia de verdade.</span>
+            Resolvendo problemas  com{" "}
+            <span className="text-blue-600">soluções elegantes e perfomáticas.</span>
           </h1>
 
           <p className="text-base md:text-lg text-slate-500 leading-relaxed mb-4 max-w-2xl mx-auto" style={{ lineHeight: 1.7 }}>
@@ -55,7 +55,7 @@ export default function Hero() {
           </p>
 
           <p className="text-base md:text-lg text-slate-500 leading-relaxed mb-8 max-w-2xl mx-auto" style={{ lineHeight: 1.7 }}>
-            Atualmente, integro a JusDigital, uma startup de Inteligência Artificial focada em transformar o dia
+            Atualmente, integro a JusDigital, como desenvolvedor back-end, uma startup de Inteligência Artificial focada em transformar o dia
             a dia dos escritórios de advocacia, automatizando tarefas repetitivas e fazendo o advogado advogar com excelência.
             Além disso, integro o projeto NERDS também como back-end, na construção do sistema para ações de extensão da UFC, chamado GEX.
           </p>
