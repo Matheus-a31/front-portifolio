@@ -35,7 +35,7 @@ export default function Hero() {
                 &lt;coder&gt;
               </h2>
               <p className="text-slate-500 text-xs sm:text-sm md:text-base max-w-xs" style={{ lineHeight: 1.7 }}>
-                Desenvolvedor back-end que transforma ideias em aplicações reais com java, Spring Boot, Typescript, Nest.js.
+                Desenvolvedor back-end que transforma ideias em realidade com java, Spring Boot, Typescript, Nest.js.
               </p>
             </div>
           </div>
