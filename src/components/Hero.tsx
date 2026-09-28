@@ -11,30 +11,30 @@ export default function Hero() {
         {/* ── Layout principal: imagem centralizada com texto ── */}
         <div className="relative flex flex-col items-center">
 
-          {/* ── Texto e imagem lado a lado em desktop ── */}
-          <div className="w-full grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-0 items-end">
+          {/* ── Texto e imagem lado a lado em desktop e mobile ── */}
+          <div className="w-full grid grid-cols-[1fr_auto_1fr] gap-2 lg:gap-0 items-end">
 
             {/* Coluna esquerda — label "creative" + texto */}
-            <div className="flex flex-col items-center lg:items-end justify-end lg:pr-10 lg:pb-16 order-2 lg:order-1 text-center lg:text-right">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-800 mb-3" style={{ letterSpacing: "-0.03em" }}>
+            <div className="flex flex-col items-center lg:items-end justify-end lg:pr-10 lg:pb-16 text-center lg:text-right">
+              <h2 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-800 mb-3" style={{ letterSpacing: "-0.03em" }}>
                 Engineer
               </h2>
-              <p className="text-slate-500 text-sm md:text-base max-w-xs" style={{ lineHeight: 1.7 }}>
+              <p className="text-slate-500 text-xs sm:text-sm md:text-base max-w-xs" style={{ lineHeight: 1.7 }}>
                 Engenheiro de Software focado em construir soluções robustas e escaláveis com código limpo.
               </p>
             </div>
 
             {/* Coluna central — Foto Split */}
-            <div className="order-1 lg:order-2 flex justify-center">
+            <div className="flex justify-center px-2">
               <SplitPhoto />
             </div>
 
             {/* Coluna direita — label "coder" + descrição */}
-            <div className="flex flex-col items-center lg:items-start justify-end lg:pl-10 lg:pb-16 order-3 text-center lg:text-left">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-blue-600 mb-3" style={{ letterSpacing: "-0.03em" }}>
+            <div className="flex flex-col items-center lg:items-start justify-end lg:pl-10 lg:pb-16 text-center lg:text-left">
+              <h2 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-blue-600 mb-3" style={{ letterSpacing: "-0.03em" }}>
                 &lt;coder&gt;
               </h2>
-              <p className="text-slate-500 text-sm md:text-base max-w-xs" style={{ lineHeight: 1.7 }}>
+              <p className="text-slate-500 text-xs sm:text-sm md:text-base max-w-xs" style={{ lineHeight: 1.7 }}>
                 Desenvolvedor back-end que transforma ideias em aplicações reais com java, Spring Boot, Typescript, Nest.js.
               </p>
             </div>
@@ -42,7 +42,7 @@ export default function Hero() {
         </div>
 
         {/* ── Seção abaixo da foto ── */}
-        <div className="mt-12 md:mt-16 max-w-3xl mx-auto text-center">
+        <div className="mt-12 md:mt-16 max-w-3xl mx-auto text-left md:text-center">
           <h1 className="text-[clamp(2rem,4vw,3rem)] font-extrabold tracking-tight text-slate-800 leading-[1.15] mb-6" style={{ letterSpacing: "-0.02em" }}>
             Resolvendo problemas  com{" "}
             <span className="text-blue-600">soluções elegantes e perfomáticas.</span>
