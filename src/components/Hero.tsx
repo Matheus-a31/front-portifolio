@@ -20,7 +20,7 @@ export default function Hero() {
                 Engineer
               </h2>
               <p className="text-slate-500 text-xs sm:text-sm md:text-base max-w-xs" style={{ lineHeight: 1.7 }}>
-                Engenheiro de Software focado em construir soluções robustas e escaláveis com código limpo.
+                Engenheiro de Software focado em soluções escaláveis com código limpo.
               </p>
             </div>
 
